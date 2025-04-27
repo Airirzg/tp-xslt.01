@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Book ∞</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <script>
+        // Function to load and transform XML with XSLT
+        function loadAndTransform() {
+            // Get URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const authorParam = urlParams.get('author') || '';
+            const yearParam = urlParams.get('year') || '';
+            
+            // Load XML
+            const xmlHttp = new XMLHttpRequest();
+            xmlHttp.open('GET', 'livres.xml', false);
+            xmlHttp.send(null);
+            const xmlDoc = xmlHttp.responseXML;
+            
+            // Load XSL
+            const xslHttp = new XMLHttpRequest();
+            xslHttp.open('GET', 'livres.xsl', false);
+            xslHttp.send(null);
+            const xslDoc = xslHttp.responseXML;
+            
+            // Set parameters in the XSLT processor
+            const processor = new XSLTProcessor();
+            processor.importStylesheet(xslDoc);
+            
+            // Set the search parameters
+            if (authorParam) {
+                processor.setParameter(null, 'author', authorParam);
+            }
+            if (yearParam) {
+                processor.setParameter(null, 'year', yearParam);
+            }
+            
+            // Transform and replace document content
+            const resultDocument = processor.transformToFragment(xmlDoc, document);
+            document.body.innerHTML = '';
+            document.body.appendChild(resultDocument);
+            
+            // Update form values
+            setTimeout(() => {
+                const authorInput = document.querySelector('input[name="author"]');
+                const yearInput = document.querySelector('input[name="year"]');
+                if (authorInput) authorInput.value = authorParam;
+                if (yearInput) yearInput.value = yearParam;
+                
+                // Update form action to point to search.html
+                const form = document.querySelector('form.search-box');
+                if (form) form.action = 'index.html';
+            }, 100);
+        }
+        
+        // Load and transform when the page loads
+        window.onload = loadAndTransform;
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-infinity"></i> Infinity Book</h1>
+            <p class="subtitle"><i class="fas fa-book-open"></i> Collection de Livres Classiques</p>
+        </header>
+        
+        <div class="search-container">
+            <p>Chargement en cours...</p>
+        </div>
+    </div>
+</body>
+</html>

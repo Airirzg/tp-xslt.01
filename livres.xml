@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="livres.xsl"?>
+<bibliotheque>
+    <livre>
+        <titre>Le Petit Prince</titre>
+        <auteur>Antoine de Saint-Exupéry</auteur>
+        <annee>1943</annee>
+        <genre>Conte philosophique</genre>
+        <prix>2318.55</prix>
+        <quantite>3</quantite>
+    </livre>
+    <livre>
+        <titre>L'Étranger</titre>
+        <auteur>Albert Camus</auteur>
+        <annee>1942</annee>
+        <genre>Roman</genre>
+        <prix>1883.55</prix>
+        <quantite>5</quantite>
+    </livre>
+    <livre>
+        <titre>La Peste</titre>
+        <auteur>Albert Camus</auteur>
+        <annee>1947</annee>
+        <genre>Roman</genre>
+        <prix>2173.55</prix>
+        <quantite>2</quantite>
+    </livre>
+    <livre>
+        <titre>Madame Bovary</titre>
+        <auteur>Gustave Flaubert</auteur>
+        <annee>1944</annee>
+        <genre>Roman</genre>
+        <prix>2033.55</prix>
+        <quantite>4</quantite>
+    </livre>
+    <livre>
+        <titre>Les Misérables</titre>
+        <auteur>Victor Hugo</auteur>
+        <annee>1945</annee>
+        <genre>Roman historique</genre>
+        <prix>2903.55</prix>
+        <quantite>1</quantite>
+    </livre>
+    <livre>
+        <titre>Notre-Dame de Paris</titre>
+        <auteur>Victor Hugo</auteur>
+        <annee>1831</annee>
+        <genre>Roman historique</genre>
+        <prix>2473.55</prix>
+        <quantite>3</quantite>
+    </livre>
+    <livre>
+        <titre>Germinal</titre>
+        <auteur>Émile Zola</auteur>
+        <annee>1885</annee>
+        <genre>Roman</genre>
+        <prix>2318.55</prix>
+        <quantite>4</quantite>
+    </livre>
+    <livre>
+        <titre>Le Rouge et le Noir</titre>
+        <auteur>Stendhal</auteur>
+        <annee>1830</annee>
+        <genre>Roman psychologique</genre>
+        <prix>2153.55</prix>
+        <quantite>2</quantite>
+    </livre>
+    <livre>
+        <titre>Les Fleurs du Mal</titre>
+        <auteur>Charles Baudelaire</auteur>
+        <annee>1857</annee>
+        <genre>Poésie</genre>
+        <prix>2603.55</prix>
+        <quantite>3</quantite>
+    </livre>
+    <livre>
+        <titre>Candide</titre>
+        <auteur>Voltaire</auteur>
+        <annee>1759</annee>
+        <genre>Conte philosophique</genre>
+        <prix>1733.55</prix>
+        <quantite>5</quantite>
+    </livre>
+</bibliotheque> 
