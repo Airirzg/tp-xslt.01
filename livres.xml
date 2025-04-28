@@ -8,6 +8,7 @@
         <genre>Conte philosophique</genre>
         <prix>2318.55</prix>
         <quantite>3</quantite>
+        <image>images/petit_prince.jpeg</image>
     </livre>
     <livre>
         <titre>L'Étranger</titre>
@@ -16,6 +17,7 @@
         <genre>Roman</genre>
         <prix>1883.55</prix>
         <quantite>5</quantite>
+        <image>images/etranger.jpg</image>
     </livre>
     <livre>
         <titre>La Peste</titre>
@@ -24,6 +26,7 @@
         <genre>Roman</genre>
         <prix>2173.55</prix>
         <quantite>2</quantite>
+        <image>images/peste.jpg</image>
     </livre>
     <livre>
         <titre>Madame Bovary</titre>
@@ -32,6 +35,7 @@
         <genre>Roman</genre>
         <prix>2033.55</prix>
         <quantite>4</quantite>
+        <image>images/bovary.jpg</image>
     </livre>
     <livre>
         <titre>Les Misérables</titre>
@@ -40,6 +44,7 @@
         <genre>Roman historique</genre>
         <prix>2903.55</prix>
         <quantite>1</quantite>
+        <image>images/miserables.jpg</image>
     </livre>
     <livre>
         <titre>Notre-Dame de Paris</titre>
@@ -48,6 +53,7 @@
         <genre>Roman historique</genre>
         <prix>2473.55</prix>
         <quantite>3</quantite>
+        <image>images/notre_dame.jpg</image>
     </livre>
     <livre>
         <titre>Germinal</titre>
@@ -56,6 +62,7 @@
         <genre>Roman</genre>
         <prix>2318.55</prix>
         <quantite>4</quantite>
+        <image>images/germinal.jpg</image>
     </livre>
     <livre>
         <titre>Le Rouge et le Noir</titre>
@@ -64,6 +71,7 @@
         <genre>Roman psychologique</genre>
         <prix>2153.55</prix>
         <quantite>2</quantite>
+        <image>images/rouge_noir.jpg</image>
     </livre>
     <livre>
         <titre>Les Fleurs du Mal</titre>
@@ -72,6 +80,7 @@
         <genre>Poésie</genre>
         <prix>2603.55</prix>
         <quantite>3</quantite>
+        <image>images/fleurs_mal.jpg</image>
     </livre>
     <livre>
         <titre>Candide</titre>
@@ -80,5 +89,6 @@
         <genre>Conte philosophique</genre>
         <prix>1733.55</prix>
         <quantite>5</quantite>
+        <image>images/candide.jpg</image>
     </livre>
-</bibliotheque> 
+</bibliotheque>
